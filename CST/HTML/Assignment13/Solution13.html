@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven-Book Registration and Order Form</title>
+</head>
+<body>
+    <form action="" target="_blank">
+     <h3>Customer Details</h3>
+     <label for="name">Customer Name:</label>
+     <input type="text" id="name" placeholder="Enter your name" required>
+     <br>
+     <label for="email">Email:</label>
+     <input type="email" id="email" placeholder="Enter your email" required>
+     <br>
+     <label for="contact">Phone Number:</label>
+     <input type="number" id="contact" maxlength="10" minlength="10" placeholder="Enter your phone number" required>
+     <br>
+     <label for="age">Age:</label>
+     <input type="number" id="age" min="10" placeholder="Enter your age" required>
+     <br>
+     <label for="pw">Password:</label>
+     <input type="password" id="pw" placeholder="Enter password" required>
+     <br>
+     <h3>More Details</h3>
+     <label for="dd">Delivery Date:</label>
+     <input type="date" id="dd" required>
+     <br>
+     <label for="dt"> Preferred Delivery Time:</label>
+     <input type="time" id="dt" required>
+     <br>
+     <label>Favourite Book Category:</label>
+     <select>
+        <option>Fiction</option>
+        <option>Science</option>
+        <option>History</option>
+        <option>Children's Books</option>
+     </select>
+        <br>
+        <label for="bt">Book Title:</label>
+        <input type="text" id="bt" required>
+        <br>
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" required>
+        <br>
+        <p>Preferred Payment Method:</p>
+        <label for="cod">Cash on Delivery</label>
+        <input type="radio" id="cod" name="ppm">
+        <label for="op">Online Payment</label>
+        <input type="radio" id="op" name="ppm">
+        <br>
+        <p>Additional Services:</p>
+        <label for="gw">Gift Wrapping</label>
+        <input type="checkbox" id="gw" name="as">
+        <label for="bm">Bookmark</label>
+        <input type="checkbox" id="bm" name="as">
+        <label for="ed">Express Delivery</label>
+        <input type="checkbox" id="ed" name="as">
+        <label for="gc">Greeting Card</label>
+        <input type="checkbox" id="gc" name="as">
+        <br>
+        <input type="hidden" value="Readers Haven Book Order">
+        <br>
+        <label for="rp">Reference Iamge/Document:</label>
+        <input type="file" id="rp">
+        <br>
+        <label>Delivery Address:</label>
+        <textarea cols="10" rows="5" maxlength="60"></textarea>
+        <br>
+         <label>Special Instruction:</label>
+        <textarea cols="10" rows="5" maxlength="60"></textarea>
+        <br>
+        <button type="submit">SUBMIT</button>
+        <br>
+        <button type="reset">RESET</button>
+
+
+
+    </form>
+</body>
+</html>
