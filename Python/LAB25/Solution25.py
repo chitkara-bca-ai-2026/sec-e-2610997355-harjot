@@ -1,0 +1,26 @@
+import numpy as np
+l1=[]
+
+print("========================================================")
+print("Scientific Data Processing")
+print("========================================================")
+x=int(input("How many readings do you want to enter?"))
+for i in range(x):
+    y=float(input(f"Enter reading{i+1}:"))
+    l1.append(y)
+print("===Array Details===")
+m=np.array(l1)
+print(f"Original Readings:{m}")
+print(f"Dimensions(ndim):{m.ndim}")
+print(f"Shape:{m.shape}")
+print(f"Total Items(size):{m.size}")
+print(f"Data Type(dtype):{m.dtype}")
+print(f"Baseline(zeros):{np.zeros((4,))}")
+print("\n")
+print("===Adjust Readings===")
+h=float(input("Enter adjustment value to add(e.g.,2.5):"))
+j=float(input("Enter multiplier value to scale(e.g.,1.5):"))
+print("===Adjusted Arrays===")
+print(f"After adding {h}:{[h]+m}")
+print(f"After multiplying by {j}:{[j]*m}")
+print("==========================================")
